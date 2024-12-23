@@ -66,10 +66,13 @@
   <ItemGroup>
     <Compile Include="Assets/Scripts/Tiles/TileEnergy.cs" />
     <Compile Include="Assets/Scripts/Core/TileController.cs" />
+    <Compile Include="Assets/Scripts/Core/CameraManager.cs" />
     <Compile Include="Assets/Scripts/Tiles/TileIntercom.cs" />
     <Compile Include="Assets/Scripts/Tiles/TileMusic.cs" />
     <Compile Include="Assets/Scripts/Tiles/TileWeather.cs" />
     <Compile Include="Assets/Scripts/Tiles/TileTime.cs" />
+    <Compile Include="Assets/Scripts/Core/PanelController.cs" />
+    <Compile Include="Assets/Scripts/Core/PanelManager.cs" />
     <Compile Include="Assets/Scripts/Core/TileManager.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -5,9 +5,6 @@ using UnityEngine;
 
 public class TileManager : MonoBehaviour
 {
-    [SerializeField]
-    private Transform tilesRoot;
-
     //Displayed for debug
     [SerializeField]
     private List<TileController> tiles = new List<TileController>();
