@@ -6,11 +6,13 @@ using UnityEngine;
 public class PanelManager : MonoBehaviour
 {
     [SerializeField]
-    private PanelController startpanel;
+    private PanelController startPanel;
 
     //Displayed for debug
     [SerializeField]
     private List<PanelController> panels = new List<PanelController>();
+
+    private PanelController currentPanel;
 
     public static PanelManager Instance;
 
@@ -21,7 +23,7 @@ public class PanelManager : MonoBehaviour
 
     private void Start()
     {
-        panels = FindObjectsByType<PanelController>(FindObjectsSortMode.None).ToList();
+        panels = FindObjectsByType<PanelController>(FindObjectsInactive.Include, FindObjectsSortMode.None).ToList();
         Initialization();
     }
 
@@ -29,7 +31,17 @@ public class PanelManager : MonoBehaviour
     {
         foreach(PanelController panel in panels)
         {
-            panel.gameObject.SetActive(panel == startpanel);
+            panel.gameObject.SetActive(panel == startPanel);
+            currentPanel = startPanel;
         }
+    }
+
+    public void SwitchPanel(PanelController newPanel)
+    {
+        if(newPanel == currentPanel){return;}
+
+        currentPanel?.gameObject.SetActive(false);
+        newPanel.gameObject.SetActive(true);
+        currentPanel = newPanel;
     }
 }

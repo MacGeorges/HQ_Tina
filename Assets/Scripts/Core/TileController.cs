@@ -12,7 +12,7 @@ public class TileController : MonoBehaviour
     {
         if(OpensPanel && panelController)
         {
-
+            PanelManager.Instance.SwitchPanel(panelController);
         }
     }
 }

@@ -8,6 +8,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3700223017912566233, guid: b55344bf8cd7a4f319ed1dbd9d825f83, type: 3}
+      propertyPath: m_text
+      value: Time
+      objectReference: {fileID: 0}
+    - target: {fileID: 3700223017912566233, guid: b55344bf8cd7a4f319ed1dbd9d825f83, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 6261830505487006699, guid: b55344bf8cd7a4f319ed1dbd9d825f83, type: 3}
       propertyPath: m_Name
       value: TileTime
@@ -92,7 +100,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3925122980111692826, guid: b55344bf8cd7a4f319ed1dbd9d825f83, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
@@ -115,5 +124,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a8a071c4e84bd4589b7811c8ff68b26e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OpensPanel: 0
+  panelController: {fileID: 0}
+  clockText: {fileID: 8974065509646891070}
+--- !u!114 &8974065509646891070 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3700223017912566233, guid: b55344bf8cd7a4f319ed1dbd9d825f83, type: 3}
+  m_PrefabInstance: {fileID: 5752112888214026727}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
