@@ -5,6 +5,9 @@ using UnityEngine;
 
 public class PanelManager : MonoBehaviour
 {
+    [SerializeField]
+    private PanelController startpanel;
+
     //Displayed for debug
     [SerializeField]
     private List<PanelController> panels = new List<PanelController>();
@@ -19,5 +22,14 @@ public class PanelManager : MonoBehaviour
     private void Start()
     {
         panels = FindObjectsByType<PanelController>(FindObjectsSortMode.None).ToList();
+        Initialization();
+    }
+
+    private void Initialization()
+    {
+        foreach(PanelController panel in panels)
+        {
+            panel.gameObject.SetActive(panel == startpanel);
+        }
     }
 }

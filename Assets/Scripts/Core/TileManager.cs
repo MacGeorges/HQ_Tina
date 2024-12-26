@@ -9,6 +9,13 @@ public class TileManager : MonoBehaviour
     [SerializeField]
     private List<TileController> tiles = new List<TileController>();
 
+    public static TileManager Instance;
+
+    private void Awake()
+    {
+        Instance = this;
+    }
+
     private void Start()
     {
         tiles = FindObjectsByType<TileController>(FindObjectsSortMode.None).ToList();
