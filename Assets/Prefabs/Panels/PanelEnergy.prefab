@@ -99,6 +99,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 4103485183390503665, guid: bab96402f0b5b4a13889bf6050b56054, type: 3}
       insertIndex: -1
       addedObject: {fileID: 9213700374037020156}
+    - targetCorrespondingSourceObject: {fileID: 4103485183390503665, guid: bab96402f0b5b4a13889bf6050b56054, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3575631521702692784}
   m_SourcePrefab: {fileID: 100100000, guid: bab96402f0b5b4a13889bf6050b56054, type: 3}
 --- !u!1 &3151762602392273967 stripped
 GameObject:
@@ -117,3 +120,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 085fb31db0c93423e9005c08dcb24bef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &3575631521702692784
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3151762602392273967}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36670b2fd71a94b719788270aa457b33, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serviceName: Energy
+  ServerCallback:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 9213700374037020156}
+        m_TargetAssemblyTypeName: PanelController, Assembly-CSharp
+        m_MethodName: OnGetPanelNetworkmessage
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
