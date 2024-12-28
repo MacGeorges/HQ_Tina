@@ -68,13 +68,14 @@
     <Compile Include="Assets/Scripts/Core/Structs/WeatherData.cs" />
     <Compile Include="Assets/Scripts/Core/TileController.cs" />
     <Compile Include="Assets/Scripts/Core/ServerConnection.cs" />
-    <Compile Include="Assets/Scripts/Panels/PanelWeather.cs" />
+    <Compile Include="Assets/Scripts/Panels/Weather/WeatherForecastUIElement.cs" />
     <Compile Include="Assets/Scripts/Panels/PanelEnergy.cs" />
     <Compile Include="Assets/Scripts/Core/CameraManager.cs" />
     <Compile Include="Assets/Scripts/Panels/PanelIntercom.cs" />
     <Compile Include="Assets/Scripts/Tiles/TileIntercom.cs" />
     <Compile Include="Assets/Scripts/Panels/PanelMainMenu.cs" />
     <Compile Include="Assets/Scripts/Tiles/TileMusic.cs" />
+    <Compile Include="Assets/Scripts/Panels/Weather/PanelWeather.cs" />
     <Compile Include="Assets/Scripts/Tiles/TileWeather.cs" />
     <Compile Include="Assets/Scripts/Tiles/TileTime.cs" />
     <Compile Include="Assets/Scripts/Core/NetworkManager.cs" />
