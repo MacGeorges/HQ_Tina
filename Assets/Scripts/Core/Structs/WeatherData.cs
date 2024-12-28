@@ -11,8 +11,10 @@ public class WeatherData
     [Serializable]
     public struct WeatherDataStruct
     {
-        public DateTime approvedTime;
-        public DateTime referenceTime;
+        //public DateTime approvedTime;
+        public string approvedTime;
+        //public DateTime referenceTime;
+        public string referenceTime;
         public Geometry geometry;
         public List<TimeSeries> timeSeries;
     }
@@ -28,7 +30,8 @@ public class WeatherData
     [Serializable]
     public struct TimeSeries
     {
-        public DateTime validTime;
+        //public DateTime validTime;
+        public string validTime;
         public List<Parameter> parameters;
     }
 

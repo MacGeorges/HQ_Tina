@@ -11,6 +11,8 @@ public class PanelWeather : PanelController
     [SerializeField]
     private WeatherDataStruct weatherDataStruct;
 
+    public System.DateTime validTime;
+
     private void Start()
     {
         callback.AddListener(RequestCallback);
