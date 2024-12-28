@@ -939,6 +939,10 @@ PrefabInstance:
       propertyPath: panelController
       value: 
       objectReference: {fileID: 7430855096199665082}
+    - target: {fileID: 6071580217151851637, guid: ccddbaa6f698544f2bd72e6c3a66b625, type: 3}
+      propertyPath: m_MovementType
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 6562621794782828579, guid: ccddbaa6f698544f2bd72e6c3a66b625, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5

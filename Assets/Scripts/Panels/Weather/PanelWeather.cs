@@ -13,6 +13,12 @@ public class PanelWeather : PanelController
 
     public System.DateTime validTime;
 
+    [Header("UI Elements")]
+    [SerializeField]
+    private Transform weatherForecastRoot;
+    [SerializeField]
+    private WeatherForecastUIElement weatherForecastPrefab;
+
     private void Start()
     {
         callback.AddListener(RequestCallback);
@@ -29,5 +35,16 @@ public class PanelWeather : PanelController
     {
         Debug.Log("Weather answer : " + response);
         weatherDataStruct = JsonUtility.FromJson<WeatherDataStruct>(response);
+
+        foreach(Transform child in weatherForecastRoot)
+        {
+            Destroy(child.gameObject);
+        }
+
+        foreach(TimeSeries timeData in weatherDataStruct.timeSeries)
+        {
+            WeatherForecastUIElement weatherForecastElement = Instantiate(weatherForecastPrefab, weatherForecastRoot);
+            weatherForecastElement.Initialize(timeData.validTime, timeData.parameters.Find(p => p.name == "t").values[0].ToString() + "°C", timeData.parameters.Find(p => p.name == "msl").values[0].ToString() + " hPa");
+        }
     }
 }

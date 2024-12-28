@@ -15,7 +15,7 @@ public class WeatherForecastUIElement : MonoBehaviour
     public void Initialize( string newDateTime, string newTemperature, string newPressure)
     {
         dateTime.text = newDateTime;
-        pressure.text = newTemperature;
-        temperature.text = newPressure;
+        temperature.text = newTemperature;
+        pressure.text = newPressure;
     }
 }
