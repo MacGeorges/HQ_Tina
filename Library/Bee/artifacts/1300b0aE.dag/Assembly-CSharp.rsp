@@ -361,6 +361,7 @@
 "Assets/Scripts/Core/PanelController.cs"
 "Assets/Scripts/Core/PanelManager.cs"
 "Assets/Scripts/Core/ServerConnection.cs"
+"Assets/Scripts/Core/Structs/WeatherData.cs"
 "Assets/Scripts/Core/TileController.cs"
 "Assets/Scripts/Core/TileManager.cs"
 "Assets/Scripts/Panels/PanelEnergy.cs"

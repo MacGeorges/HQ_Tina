@@ -65,6 +65,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets/Scripts/Tiles/TileEnergy.cs" />
+    <Compile Include="Assets/Scripts/Core/Structs/WeatherData.cs" />
     <Compile Include="Assets/Scripts/Core/TileController.cs" />
     <Compile Include="Assets/Scripts/Core/ServerConnection.cs" />
     <Compile Include="Assets/Scripts/Panels/PanelWeather.cs" />

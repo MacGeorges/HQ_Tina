@@ -25,14 +25,19 @@ public class NetworkManager : MonoBehaviour
         GetServermessage("ServerTest.php", ServerTestCallback);
     }
 
-    public void GetServermessage(string service, UnityEvent<string> callback)
+    public void GetDirectRequest(string URL, UnityEvent<string> callback)
     {
-        StartCoroutine(Connectiontest(service, callback));
+        StartCoroutine(Connectiontest(URL, callback));
     }
 
-    IEnumerator Connectiontest(string service, UnityEvent<string> callback)
+    public void GetServermessage(string service, UnityEvent<string> callback)
     {
-         using (UnityWebRequest webRequest = UnityWebRequest.Get(serverAddress + service))
+        StartCoroutine(Connectiontest(serverAddress + service, callback));
+    }
+
+    IEnumerator Connectiontest(string URL, UnityEvent<string> callback)
+    {
+         using (UnityWebRequest webRequest = UnityWebRequest.Get(URL))
         {
             // Request and wait for the desired page.
             yield return webRequest.SendWebRequest();
