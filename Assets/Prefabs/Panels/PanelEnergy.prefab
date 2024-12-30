@@ -120,6 +120,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 085fb31db0c93423e9005c08dcb24bef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  panelTile: {fileID: 6185059114170414447, guid: 6981f70ee4a744796bbd6e0ab470bc06, type: 3}
 --- !u!114 &3575631521702692784
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -133,6 +134,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   serviceName: Energy
+  getDataOnEnable: 0
+  getDataOnUpdate: 0
+  getDataOnUpdateInterval: 0
   ServerCallback:
     m_PersistentCalls:
       m_Calls:

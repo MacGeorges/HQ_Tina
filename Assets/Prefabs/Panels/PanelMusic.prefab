@@ -120,6 +120,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d2fe7933b3684f4b869c4b1b876533a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  panelTile: {fileID: 8309358162045065265, guid: 01fa06b2cf04b4531825414e802cf343, type: 3}
 --- !u!114 &1529451736211252298
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -133,6 +134,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   serviceName: Music
+  getDataOnEnable: 0
+  getDataOnUpdate: 0
+  getDataOnUpdateInterval: 0
   ServerCallback:
     m_PersistentCalls:
       m_Calls:

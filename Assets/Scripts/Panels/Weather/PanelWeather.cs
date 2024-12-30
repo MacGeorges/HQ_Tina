@@ -45,6 +45,7 @@ public class PanelWeather : PanelController
         {
             WeatherForecastUIElement weatherForecastElement = Instantiate(weatherForecastPrefab, weatherForecastRoot);
             weatherForecastElement.Initialize(timeData.validTime, timeData.parameters.Find(p => p.name == "t").values[0].ToString() + "°C", timeData.parameters.Find(p => p.name == "msl").values[0].ToString() + " hPa");
+            //weatherForecastElement.Initialize(timeData.validTime, timeData.parameters.t + "°C", timeData.parameters.msl + " hPa");
         }
     }
 }

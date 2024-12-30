@@ -842,6 +842,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PanelWeather
       objectReference: {fileID: 0}
+    - target: {fileID: 4486048406454593089, guid: bab96402f0b5b4a13889bf6050b56054, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: cf52a8ca9497d43f68d240880695d8e8, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -878,6 +882,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee25d382c842a4e7a82a5a9469f7829c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  panelTile: {fileID: 7702834163497090428, guid: 70520ea2a773a404285f40eec222a9fc, type: 3}
   weatherDataStruct:
     approvedTime: 
     referenceTime: 

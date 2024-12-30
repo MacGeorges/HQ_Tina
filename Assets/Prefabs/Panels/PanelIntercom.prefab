@@ -120,6 +120,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 190bfa859d0f4446d94c54d26e51061d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  panelTile: {fileID: 4911718366233535467, guid: 791063d3b67ff4bf888a50a6e990d901, type: 3}
 --- !u!114 &8215829179715620002
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -133,6 +134,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   serviceName: Intercom
+  getDataOnEnable: 0
+  getDataOnUpdate: 0
+  getDataOnUpdateInterval: 0
   ServerCallback:
     m_PersistentCalls:
       m_Calls:

@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 154bb65119d834208ab6f2ddfe484d95, type: 3}
+  m_Name: ProfileInfos
+  m_EditorClassIdentifier: 
+  skin: {fileID: 11400000, guid: bed447532749d4a758b49e2c58913e93, type: 2}
+  panels:
+  - {fileID: 9213700374037020156, guid: d75d4b2b0c7c3417dbf3a93853075f1e, type: 3}
+  - {fileID: 4895284437265200622, guid: 892b927ea81e54037b84029d55da9387, type: 3}
+  - {fileID: 5631893286690276089, guid: fe201445af38a4bf1becb8e82c6e0902, type: 3}
+  - {fileID: 4203551214285741807, guid: ed69a8ed04c784ad3a9e3653a3232a3d, type: 3}
+  - {fileID: 5259015608756642283, guid: ccddbaa6f698544f2bd72e6c3a66b625, type: 3}
+  startPanel: {fileID: 5631893286690276089, guid: fe201445af38a4bf1becb8e82c6e0902, type: 3}
